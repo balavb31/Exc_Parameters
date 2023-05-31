@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:true}));
 
-const mysql = require('mysql');
+/*const mysql = require('mysql');
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -18,7 +18,7 @@ db.connect((err) => {
         throw err;
     }
     console.log("Connected to the database");
-});
+});*/
 
 
 
@@ -41,7 +41,7 @@ app.post("/",function(req,res){
 
     //const sql = `SELECT * FROM exc_parameters;`;
 
-    const sql = `INSERT INTO exc_parameters values ("${date}", 25,"Yes",8000,3,"No","Evening Yoga");`;
+    /*const sql = `INSERT INTO exc_parameters values ("${date}", 25,"Yes",8000,3,"No","Evening Yoga");`;
 
         db.query(sql, (err, results) => {
             if (err) {
@@ -52,7 +52,7 @@ app.post("/",function(req,res){
             else{
                 console.log(results);
             }
-        });
+        });*/
 
 })
 
